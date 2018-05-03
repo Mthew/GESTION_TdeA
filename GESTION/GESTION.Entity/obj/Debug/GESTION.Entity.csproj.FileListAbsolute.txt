@@ -1,0 +1,9 @@
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\GESTION.Entity.dll.config
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\GESTION.Entity.dll
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\GESTION.Entity.pdb
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\EntityFramework.dll
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\EntityFramework.xml
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\obj\Debug\GESTION.Entity.dll
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Entity\obj\Debug\GESTION.Entity.pdb

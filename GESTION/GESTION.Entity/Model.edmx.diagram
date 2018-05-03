@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="933145a8b92b449eb4dc6f7c336bb80f" Name="Diagram1">
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Ciudades" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Departamentos" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Paises" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Permisos" Width="1.5" PointX="9.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.PermisosRol" Width="1.5" PointX="12" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Personas" Width="1.5" PointX="7.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Roles" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.RolesUsuario" Width="1.5" PointX="12" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.TipoDocumento" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gestion_TdeAModel.Usuarios" Width="1.5" PointX="9.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__Ciudades__IdDepa__0DAF0CB0" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__Personas__IdCiud__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__Departame__IdPai__08EA5793" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__PermisosR__IdPer__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__PermisosR__IdRol__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__Personas__IdTipo__1367E606" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__Usuarios__IdPers__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__RolesUsua__IdRol__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="Gestion_TdeAModel.FK__RolesUsua__IdUsu__2A4B4B5E" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

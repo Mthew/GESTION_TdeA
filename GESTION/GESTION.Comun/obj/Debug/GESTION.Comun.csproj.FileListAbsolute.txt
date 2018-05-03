@@ -1,0 +1,4 @@
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Comun\bin\Debug\GESTION.Comun.dll
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Comun\bin\Debug\GESTION.Comun.pdb
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Comun\obj\Debug\GESTION.Comun.dll
+C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Comun\obj\Debug\GESTION.Comun.pdb
