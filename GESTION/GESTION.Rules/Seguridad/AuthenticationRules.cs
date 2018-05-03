@@ -22,10 +22,12 @@ namespace GESTION.Rules
         public AuthenticationDto Login(string userName, string password)
         {
             var user = Entities.Usuarios.Where(e => e.Nombre == userName && e.Clave == password).FirstOrDefault();
+
             if (user == null)
             {
                 throw new Exception("Usuario o clave no validos");
             }
+
             AuthenticationDto authentication = new AuthenticationDto();
             var persona = user.Personas;
             var rol = user.RolesUsuario.FirstOrDefault();
@@ -36,6 +38,7 @@ namespace GESTION.Rules
             authentication.RolId = rol.Id;
             authentication.RolName = rol.Roles.Nombre;
             authentication.Permisos = permisos;
+
             return authentication;
         }
     }
