@@ -116,6 +116,7 @@
     <Content Include="Content\Template\css\main.css" />
     <Content Include="Content\Template\img\apple-icon.png" />
     <Content Include="Content\Template\img\favicon.png" />
+    <Content Include="Content\Template\img\fondo-1.jpg" />
     <Content Include="Content\Template\img\login-bg-2.jpg" />
     <Content Include="Content\Template\img\login-bg.jpg" />
     <Content Include="Content\Template\img\logo-dark.png" />
