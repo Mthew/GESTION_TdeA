@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GestionTdeA" Class="EntitiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=tcp:vulcano92.database.windows.net,1433;Initial Catalog=GestionTdeA;Persist Security Info=False;User ID=Andromeda9229;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" SettingsObjectName="GESTION.Entity.Properties.Settings" SettingsPropertyName="GestionTdeAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ciudades" Member="Ciudades">
+    <Type Name="Ciudade">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdDepartamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Ciudade_Persona" Member="Personas" ThisKey="Id" OtherKey="IdCiudad" Type="Persona" />
+      <Association Name="Departamento_Ciudade" Member="Departamento" ThisKey="IdDepartamento" OtherKey="Id" Type="Departamento" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuarios" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPersona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Clave" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Usuario_RolesUsuario" Member="RolesUsuarios" ThisKey="Id" OtherKey="IdUsuario" Type="RolesUsuario" />
+      <Association Name="Persona_Usuario" Member="Persona" ThisKey="IdPersona" OtherKey="Id" Type="Persona" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Departamentos" Member="Departamentos">
+    <Type Name="Departamento">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPais" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Departamento_Ciudade" Member="Ciudades" ThisKey="Id" OtherKey="IdDepartamento" Type="Ciudade" />
+      <Association Name="Paise_Departamento" Member="Paise" ThisKey="IdPais" OtherKey="Id" Type="Paise" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paises" Member="Paises">
+    <Type Name="Paise">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Paise_Departamento" Member="Departamentos" ThisKey="Id" OtherKey="IdPais" Type="Departamento" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permisos" Member="Permisos">
+    <Type Name="Permiso">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Permiso_PermisosRol" Member="PermisosRols" ThisKey="Id" OtherKey="IdPermiso" Type="PermisosRol" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PermisosRol" Member="PermisosRols">
+    <Type Name="PermisosRol">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdRol" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPermiso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Permiso_PermisosRol" Member="Permiso" ThisKey="IdPermiso" OtherKey="Id" Type="Permiso" IsForeignKey="true" />
+      <Association Name="Role_PermisosRol" Member="Role" ThisKey="IdRol" OtherKey="Id" Type="Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Personas" Member="Personas">
+    <Type Name="Persona">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCiudad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTipoDocumento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroDocumento" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="SegundoNombre" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="SegundoApellido" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FechaNacimiento" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Persona_Usuario" Member="Usuarios" ThisKey="Id" OtherKey="IdPersona" Type="Usuario" />
+      <Association Name="Ciudade_Persona" Member="Ciudade" ThisKey="IdCiudad" OtherKey="Id" Type="Ciudade" IsForeignKey="true" />
+      <Association Name="TipoDocumento_Persona" Member="TipoDocumento" ThisKey="IdTipoDocumento" OtherKey="Id" Type="TipoDocumento" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Role_PermisosRol" Member="PermisosRols" ThisKey="Id" OtherKey="IdRol" Type="PermisosRol" />
+      <Association Name="Role_RolesUsuario" Member="RolesUsuarios" ThisKey="Id" OtherKey="IdRol" Type="RolesUsuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RolesUsuario" Member="RolesUsuarios">
+    <Type Name="RolesUsuario">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdRol" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Role_RolesUsuario" Member="Role" ThisKey="IdRol" OtherKey="Id" Type="Role" IsForeignKey="true" />
+      <Association Name="Usuario_RolesUsuario" Member="Usuario" ThisKey="IdUsuario" OtherKey="Id" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sysdiagrams" Member="sysdiagrams">
+    <Type Name="sysdiagram">
+      <Column Name="name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="principal_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="diagram_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="version" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="definition" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoDocumento" Member="TipoDocumentos">
+    <Type Name="TipoDocumento">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="TipoDocumento_Persona" Member="Personas" ThisKey="Id" OtherKey="IdTipoDocumento" Type="Persona" />
+    </Type>
+  </Table>
+</Database>

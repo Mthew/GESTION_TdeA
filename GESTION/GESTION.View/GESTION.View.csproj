@@ -112,17 +112,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Template\css\bootstrap.css" />
+    <Content Include="Content\Template\css\bootstrap.min.css" />
     <Content Include="Content\Template\css\demo.css" />
+    <Content Include="Content\Template\css\demo.css.map" />
     <Content Include="Content\Template\css\main.css" />
+    <Content Include="Content\Template\css\main.css.map" />
     <Content Include="Content\Template\img\apple-icon.png" />
     <Content Include="Content\Template\img\favicon.png" />
-    <Content Include="Content\Template\img\fondo-1.jpg" />
     <Content Include="Content\Template\img\login-bg-2.jpg" />
     <Content Include="Content\Template\img\login-bg.jpg" />
     <Content Include="Content\Template\img\logo-dark.png" />
     <Content Include="Content\Template\img\logo-ico.png" />
     <Content Include="Content\Template\img\Logo-large.png" />
-    <Content Include="Content\Template\img\Logo-small.jpg" />
+    <Content Include="Content\Template\img\Logo-small.png" />
     <Content Include="Content\Template\img\logo.png" />
     <Content Include="Content\Template\img\profile-bg.png" />
     <Content Include="Content\Template\img\user-medium.png" />
@@ -132,6 +135,39 @@
     <Content Include="Content\Template\img\user3.png" />
     <Content Include="Content\Template\img\user4.png" />
     <Content Include="Content\Template\img\user5.png" />
+    <Content Include="Content\Template\scripts\klorofil-common.js" />
+    <Content Include="Content\Template\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\Template\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\Template\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\Template\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\Template\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Template\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\Template\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\Template\vendor\bootstrap\js\npm.js" />
+    <Content Include="Content\Template\vendor\chartist\css\chartist-custom.css" />
+    <Content Include="Content\Template\vendor\chartist\css\chartist.css" />
+    <Content Include="Content\Template\vendor\chartist\css\chartist.min.css" />
+    <Content Include="Content\Template\vendor\chartist\js\chartist.js" />
+    <Content Include="Content\Template\vendor\chartist\js\chartist.min.js" />
+    <Content Include="Content\Template\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\Template\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\Template\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Template\vendor\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="Content\Template\vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\Template\vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
+    <Content Include="Content\Template\vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
+    <Content Include="Content\Template\vendor\jquery.easy-pie-chart\easypiechart.js" />
+    <Content Include="Content\Template\vendor\jquery.easy-pie-chart\easypiechart.min.js" />
+    <Content Include="Content\Template\vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
+    <Content Include="Content\Template\vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
+    <Content Include="Content\Template\vendor\jquery\jquery.js" />
+    <Content Include="Content\Template\vendor\jquery\jquery.min.js" />
+    <Content Include="Content\Template\vendor\linearicons\fonts\Linearicons-Free.svg" />
+    <Content Include="Content\Template\vendor\linearicons\style.css" />
+    <Content Include="Content\Template\vendor\toastr\toastr.css" />
+    <Content Include="Content\Template\vendor\toastr\toastr.js" />
+    <Content Include="Content\Template\vendor\toastr\toastr.min.css" />
+    <Content Include="Content\Template\vendor\toastr\toastr.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="styles\Pluggings\Bootstrap\bootstrap-grid.css" />
     <Content Include="styles\Pluggings\Bootstrap\bootstrap-grid.min.css" />
@@ -162,8 +198,24 @@
     <Content Include="styles\Pluggings\Bootstrap\bootstrap-grid.css.map" />
     <Content Include="styles\Pluggings\Bootstrap\bootstrap.min.css.map" />
     <Content Include="styles\Pluggings\Bootstrap\bootstrap.css.map" />
-    <Content Include="Content\Template\css\demo.css.map" />
-    <Content Include="Content\Template\css\main.css.map" />
+    <Content Include="Content\Template\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Template\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Template\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Template\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Template\vendor\chartist\css\chartist-custom.css.map" />
+    <Content Include="Content\Template\vendor\chartist\map\chartist.css.map" />
+    <Content Include="Content\Template\vendor\chartist\map\chartist.min.js.map" />
+    <Content Include="Content\Template\vendor\chartist\scss\chartist.scss" />
+    <Content Include="Content\Template\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Template\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Template\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Template\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Template\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\Template\vendor\jquery\jquery.min.map" />
+    <Content Include="Content\Template\vendor\linearicons\fonts\Linearicons-Free.eot" />
+    <Content Include="Content\Template\vendor\linearicons\fonts\Linearicons-Free.ttf" />
+    <Content Include="Content\Template\vendor\linearicons\fonts\Linearicons-Free.woff" />
+    <Content Include="Content\Template\vendor\linearicons\fonts\Linearicons-Free.woff2" />
     <None Include="scripts\Pluggings\JQuery\jquery-3.3.1.intellisense.js" />
     <Content Include="scripts\Pluggings\JQuery\jquery-3.3.1.js" />
     <Content Include="scripts\Pluggings\JQuery\jquery-3.3.1.min.js" />
@@ -177,30 +229,16 @@
     <Content Include="scripts\Pluggings\Bootstrap\umd\popper-utils.min.js" />
     <Content Include="scripts\Pluggings\Bootstrap\umd\popper.js" />
     <Content Include="scripts\Pluggings\Bootstrap\umd\popper.min.js" />
-    <Content Include="Content\Template\chartist\css\chartist-custom.css" />
-    <Content Include="Content\Template\chartist\css\chartist.css" />
-    <Content Include="Content\Template\chartist\css\chartist.min.css" />
-    <Content Include="Content\Template\chartist\js\chartist.js" />
-    <Content Include="Content\Template\chartist\js\chartist.min.js" />
-    <Content Include="Content\Template\font-awesome\css\font-awesome.css" />
-    <Content Include="Content\Template\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Content\Template\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\Template\jquery-slimscroll\jquery.slimscroll.js" />
-    <Content Include="Content\Template\jquery-slimscroll\jquery.slimscroll.min.js" />
-    <Content Include="Content\Template\linearicons\fonts\Linearicons-Free.svg" />
-    <Content Include="Content\Template\linearicons\style.css" />
-    <Content Include="Content\Template\toastr\toastr.css" />
-    <Content Include="Content\Template\toastr\toastr.js" />
-    <Content Include="Content\Template\toastr\toastr.min.css" />
-    <Content Include="Content\Template\toastr\toastr.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CiudadController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -223,19 +261,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Content\Template\chartist\css\chartist-custom.css.map" />
-    <Content Include="Content\Template\chartist\map\chartist.css.map" />
-    <Content Include="Content\Template\chartist\map\chartist.min.js.map" />
-    <Content Include="Content\Template\chartist\scss\chartist.scss" />
-    <Content Include="Content\Template\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\Template\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\Template\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\Template\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\Template\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="Content\Template\linearicons\fonts\Linearicons-Free.eot" />
-    <Content Include="Content\Template\linearicons\fonts\Linearicons-Free.ttf" />
-    <Content Include="Content\Template\linearicons\fonts\Linearicons-Free.woff" />
-    <Content Include="Content\Template\linearicons\fonts\Linearicons-Free.woff2" />
+    <Content Include="Views\Ciudad\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -245,7 +271,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="scripts\App\" />
     <Folder Include="scripts\Utils\" />
     <Folder Include="styles\App\" />

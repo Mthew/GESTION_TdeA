@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adminitracion\CiudadRules.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seguridad\AuthenticationRules.cs" />
     <Compile Include="Seguridad\UsuarioRules.cs" />
@@ -60,13 +62,11 @@
       <Name>GESTION.Dto</Name>
     </ProjectReference>
     <ProjectReference Include="..\GESTION.Entity\GESTION.Entity.csproj">
-      <Project>{debff1fb-6096-471c-9bff-f500ea3669db}</Project>
+      <Project>{e4cefcc8-f792-434c-bd63-e3801b5da837}</Project>
       <Name>GESTION.Entity</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Adminitracion\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -16,3 +16,8 @@ textarea {
     max-width: 280px;
 }
 
+.mb-alert {
+    position: fixed;
+    float: right;
+    margin: 20px;
+}

@@ -12,11 +12,11 @@ namespace GESTION.Rules
 {
     public class AuthenticationRules
     {
-        private Gestion_TdeAEntities Entities = null;
+        private EntitiesDataContext Entities = null;
 
         public AuthenticationRules()
         {
-            this.Entities = new Gestion_TdeAEntities();
+            this.Entities = new EntitiesDataContext();
         }
 
         public AuthenticationDto Login(string userName, string password)
@@ -29,16 +29,22 @@ namespace GESTION.Rules
             }
 
             AuthenticationDto authentication = new AuthenticationDto();
-            var persona = user.Personas;
-            var rol = user.RolesUsuario.FirstOrDefault();
-            var permisos = rol.Roles.PermisosRol.Select(e => e.Permisos.Nombre).ToList();
+            var persona = user.Persona;
+           
             authentication.Id = user.Id;
             authentication.FullName = string.Format("{0} {1} {2} {3}", persona.Nombre, persona.SegundoNombre, persona.Apellido, persona.SegundoApellido);
             authentication.UserName = user.Nombre;
-            authentication.RolId = rol.Id;
-            authentication.RolName = rol.Roles.Nombre;
-            authentication.Permisos = permisos;
-
+            var rol = user.RolesUsuarios.FirstOrDefault();
+            if (rol != null)
+            {
+                authentication.RolId = rol.Id;
+                authentication.RolName = rol.Role.Nombre;
+                var permisos = rol.Role.PermisosRols;
+                if (permisos != null)
+                {
+                    authentication.Permisos = permisos.Select(e => e.Permiso.Nombre).ToList();
+                }
+            }
             return authentication;
         }
     }

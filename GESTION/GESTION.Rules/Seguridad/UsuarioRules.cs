@@ -10,10 +10,10 @@ namespace GESTION.Rules
 {
     public class UsuarioRules
     {
-        private Gestion_TdeAEntities Entities = null;
+        private EntitiesDataContext Entities = null;
 
         public UsuarioRules() {
-            this.Entities = new Gestion_TdeAEntities();        
+            this.Entities = new EntitiesDataContext();        
         }
     }
 }

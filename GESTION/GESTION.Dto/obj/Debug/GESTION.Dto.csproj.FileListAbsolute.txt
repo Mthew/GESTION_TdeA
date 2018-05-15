@@ -1,7 +1,0 @@
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\bin\Debug\GESTION.Dto.dll
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\bin\Debug\GESTION.Dto.pdb
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\bin\Debug\GESTION.Comun.dll
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\bin\Debug\GESTION.Comun.pdb
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\obj\Debug\GESTION.Dto.csprojResolveAssemblyReference.cache
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\obj\Debug\GESTION.Dto.dll
-C:\SourceCode\Fundamentos de Desarrollo\GESTION_TdeA\GESTION\GESTION.Dto\obj\Debug\GESTION.Dto.pdb
